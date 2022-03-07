@@ -1,24 +1,105 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-	  <body style="background-color:#1c87c9;">
-    <meta charset="utf-8">
-    <title>My test page</title>
-  </head>
-  <body>
-	<h1> "About Me" by Gagandeep singh </h1>
-    <p> I'm alright using <strong>Java</strong> and <strong>Unix</strong> but really interested in learning more languages. </p>
-    <p> My main goal when I'm graduated is to create games and develop more software experience from big companies.</p>
-    <p>	The interesting topic for me will be talking about <strong>Robotics</strong> because that what got me 
-	me into computer science.
- 
-	<a href='https://builtin.com/robotics' title='Isn&apos;t this fun?'>A link to info about Robotics.</a>
-</p>
-<img src="https://www.vapulus.com/en/wp-content/uploads/2018/12/0a3f95b3-ff9b-476a-8679-ac3a7fe00fa0-4.jpg"
-	 width="500" 
-    	 height="400" />
-	  
-	  <a href="fancifymytext.html" target="_blank">Assignment 4</a> 
+<html lang="en">
+<head>
+<title>About Me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  </body>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>HOMEPAGE</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href='https://builtin.com/robotics' title='Isn&apos;t this fun?'>Robotics.</a></li>
+      <li><ahref="fancifymytext.html" target="_blank">Assignment 4</a></li>
+      <img src="https://www.vapulus.com/en/wp-content/uploads/2018/12/0a3f95b3-ff9b-476a-8679-ac3a7fe00fa0-4.jpg"
+	 width="150" 
+    	 height="140" />
+      
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>My main goal when I'm graduated is to create games and develop more software experience from big companies.</p>
+    <p> I'm alright using <strong>Java</strong> and <strong>Unix</strong> but really interested in learning more languages. </p>
+    <p>	The interesting topic for me will be talking about <strong>Robotics</strong> because that what got me 
+	me into computer science.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Gagandeep Singh</p>
+</footer>
+
+</body>
 </html>
+
